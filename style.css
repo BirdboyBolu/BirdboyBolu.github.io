@@ -1,0 +1,303 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.header{
+	min-height: 100vh;
+	width: 100%;
+	background: url(images/hairbanner.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.logo{
+	width: 150px;
+	cursor: pointer;
+}
+nav{
+	display: flex;
+	padding: 2% 6%;
+	align-items: center;
+}
+.nav-links{
+	flex: 1;
+	text-align: center;
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+.nav-links ul li a{
+	color: lightgrey;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+.nav-links ul li::after{
+	content: '';
+	width: 0%;
+	height: 3px;
+	background: lightpink;
+	display: block;
+	margin: auto;
+}
+.nav-links ul li:hover::after{
+	width: 100%;
+	transition: 0.5s;
+}
+.text-box{
+	width: 90%;
+	color: lightgrey;
+	text-decoration: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: left;
+}
+.text-box h1{
+	font-size: 60px;
+	font-family: 'Roboto', sans-serif;
+}
+.text-box p{
+	margin: 10px 30px 40px;
+	font-size: 15px;
+	color: lightgrey;
+	font-family: 'Roboto', sans-serif;
+}
+.burtn{
+	display: inline-block;
+	text-decoration: none;
+	color: lightgrey;
+	margin: 40px 78px 40px;
+	border: 2px solid pink;
+	border-radius: 5px;
+	padding: 12px 34px;
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+}
+.burtn:hover{
+	border: 2px solid lightpink;
+	background: lightpink;
+	transition: 1s;
+}
+
+nav .fa{
+	display: none;
+}
+
+@media all and (max-width: 700px){
+	.text-box h1{
+		font-size: 20px;
+		text-align: center;
+	}
+	.nav-links ul li{
+		display: block;
+	}
+	.nav-links{
+		position: absolute;
+		background: lightpink;
+		height: 100vh;
+		width: 200px;
+		top: 0;
+		left: 200px;
+		text-align: right;
+		z-index: 2;
+		transition: 1s;
+	}
+	.nav-links ul{
+		padding: 30px;
+	}
+	a .burtn{
+		font-size: 20px;
+	}
+} 	
+
+/*-------services------*/
+
+.Services{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+.Services h1{
+	font-size: 36px;
+	font-weight: 600;
+	color: grey;
+	font-family: 'Roboto', sans-serif;
+}
+.Services p{
+	margin: 10px 30px 40px;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 20px;
+	padding: 10px;
+	color: grey;
+	font-family: 'Roboto', sans-serif;
+}
+h3{
+	text-align: center;
+	font-weight: 600;
+	margin: 10px;
+	color: grey;
+	font-family: 'Roboto', sans-serif;
+}
+.row{
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+.Services-col{
+	flex-basis: 31%;
+	background: lightpink;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	padding:20px 12px;
+	box-sizing: border-box;
+	transition: 0.75s;
+}
+.Services-col:hover{
+	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
+}
+@media(max-width: 700px){
+	.row{
+		flex-direction: column;
+	}
+}
+/*-----------salon-------*/
+.salon{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+.salon-col{
+	flex-basis: 32%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+	transition: 0.75s;
+}
+.salon-col img{
+	width: 100%;
+}
+.salon h1{
+	font-size: 36px;
+	font-weight: 600;
+	color: grey;
+	font-family: 'Roboto', sans-serif;
+}
+.salon p{
+	margin: 10px 30px 40px;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 20px;
+	padding: 10px;
+	color: grey;
+	font-family: 'Roboto', sans-serif;
+}
+.row img{
+	float: right;
+}
+.row img{
+	float: left;
+}
+.salon-col:hover{
+	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+/*Reviews*/
+
+.review{
+	width: 80%;
+	margin: auto;
+	padding-top: 100px;
+	text-align: center;
+}
+.review h1{
+	font-size: 36px;
+	font-weight: 600;
+	color: grey;
+	font-family: 'Roboto', sans-serif;
+}
+.review p{
+	margin: 10px 30px 40px;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 20px;
+	padding: 10px;
+	color: grey;
+	font-family: 'Roboto', sans-serif;
+}
+.review-col{
+	flex-basis: 44%;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	text-align: left;
+	background: lightpink;
+	padding: 25px;
+	cursor: pointer;
+	display: flex;
+}
+.review-col img{
+	height: 40px;
+	margin-left: 5px;
+	margin-right: 30px;
+	border-radius: 50%;
+}
+.review-col p{
+	padding: 0;
+}
+.review-col h3{
+	text-align: left;
+}
+.review-col .fa{
+	color: black;
+}
+@media(max-width: 700px){
+	.review-col img{
+		margin-left: 0px;
+		margin-right: 15px;
+	}
+}
+.footer{
+	width: 100%;
+	text-align: center;
+	padding: 20px 0;
+	color: grey;
+	font-family: 'Roboto', sans-serif
+}
+.footer-col{
+	flex-basis: 44%;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	text-align: left;
+	background: grey;
+	padding: 15px;
+	cursor: pointer;
+	display: flex;	
+}
+.footer h4{
+	margin-bottom: 25px;
+	margin-top: 10px;
+	font-size: 36px;
+	font-weight: 600;
+	color: grey;
+	font-family: 'Roboto', sans-serif;
+}
+.footer p{
+	margin: 10px 30px 40px;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 20px;
+	padding: 10px;
+	color: grey;
+	font-family: 'Roboto', sans-serif;
+}
